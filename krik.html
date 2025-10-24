@@ -1,20 +1,29 @@
 <html>
+<html>
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
-  <title>NFCsound</title>
+  <title>NFCsounds</title>
+  <style>
+    a {
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    img {
+      width: 300px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-<img src="https://www.meme-arsenal.com/memes/a423767c2b6741ba70a417c9ca3dd7d0.jpg" width="300" onclick="playSound()">
+  <a href="#" onclick="this.querySelector('audio').currentTime=0; this.querySelector('audio').play(); return false;">
+    <img src="https://www.meme-arsenal.com/memes/a423767c2b6741ba70a417c9ca3dd7d0.jpg" alt="Натисни мене">
+    <audio src="krik-ispugaa.mp3"></audio>
+  </a>
 
-<audio id="sound" src="krik-ispugaa.mp3"></audio>
-
-<script>
-function playSound() {
-  const s = document.getElementById('sound');
-  s.currentTime = 0;
-  s.play();
-}
-</script>
 </body>
 </html>
