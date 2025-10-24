@@ -1,0 +1,31 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>NFCsound</title>
+</head>
+<body>
+
+  <h2>by @sania</h2>
+
+  <img 
+    src="https://www.meme-arsenal.com/memes/a423767c2b6741ba70a417c9ca3dd7d0.jpg" 
+    alt="Мем зі звуком" 
+    id="pic">
+
+  <audio id="sound" src="NFC.mp3"></audio>
+
+  <p>При натисканні на зображення звучить аудіо <strong>krik-ispugaa.mp3</strong> </p>
+
+  <script>
+    const pic = document.getElementById('pic');
+    const sound = document.getElementById('sound');
+
+    pic.onclick = () => {
+      sound.currentTime = 0;
+      sound.play();
+    };
+  </script>
+
+</body>
+</html>
