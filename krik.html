@@ -3,27 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>NFCsounds</title>
-  <style>
-    a {
-      display: inline-block;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    img {
-      width: 300px;
-      border-radius: 10px;
-      transition: transform 0.2s;
-    }
-    img:hover {
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-<body>
-  <a href="#" onclick="this.querySelector('audio').currentTime=0; this.querySelector('audio').play(); return false;">
-    <img src="https://www.meme-arsenal.com/memes/a423767c2b6741ba70a417c9ca3dd7d0.jpg" alt="Натисни мене">
-    <audio src="krik-ispugaa.mp3"></audio>
-  </a>
-
+ <div id="instant-page-button">
+    <div class="circle large-button-background" style="background-color:#FF0000;"></div>
+    <button id="instant-page-button-element" class="large-button" data-url="/media/sounds/krik-ispugaa.mp3" onclick="play('/media/sounds/krik-ispugaa.mp3', 'loader-', 'krik-ispugaa-77822')" title="Воспроизвести звук Крик испугаа"></button>
+    <div id="loader-" class="loader-large"></div>
+    <div class="large-button-shadow"></div>
+  </div>
 </body>
 </html>
