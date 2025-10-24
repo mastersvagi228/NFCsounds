@@ -5,27 +5,16 @@
   <title>NFCsound</title>
 </head>
 <body>
+<img src="https://www.meme-arsenal.com/memes/a423767c2b6741ba70a417c9ca3dd7d0.jpg" width="300" onclick="playSound()">
 
-  <h2>by @sania</h2>
+<audio id="sound" src="NFC.mp3"></audio>
 
-  <img 
-    src="https://www.meme-arsenal.com/memes/a423767c2b6741ba70a417c9ca3dd7d0.jpg" 
-    alt="Мем зі звуком" 
-    id="pic">
-
-  <audio id="sound" src="krik-ispugaa.mp3"></audio>
-
-  <p><strong>krik-ispugaa.mp3</strong> </p>
-
-  <script>
-    const pic = document.getElementById('pic');
-    const sound = document.getElementById('sound');
-
-    pic.onclick = () => {
-      sound.currentTime = 0;
-      sound.play();
-    };
-  </script>
-
+<script>
+function playSound() {
+  const s = document.getElementById('sound');
+  s.currentTime = 0;
+  s.play();
+}
+</script>
 </body>
 </html>
